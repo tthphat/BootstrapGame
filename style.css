@@ -1,0 +1,17 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.header .table th{
+    background-color: #4285F4;
+    color: white;
+}
+
+.exercise-1 .solution .answer #inputAnswer-1{
+    min-height: 100px;
+    resize: vertical;
+    display: flex; align-items: center;
+    padding: auto;
+}

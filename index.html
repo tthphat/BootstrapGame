@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Game</title>
+    <!-- Link Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container mx-auto my-5 d-flex flex-column gap-5 align-items-center">
+        <!-- Header -->
+        <div class="header d-flex flex-column gap-3 align-items-center justify-content-center w-100 text-center">
+            <h1 class="title">Bootstrap Layout Game</h1>
+            <div class="table-responsive w-100">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Breakpoint</th>
+                            <th>Class infix</th>
+                            <th>Dimensions</th>
+                            <th>Quy định</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Extra small</td>
+                            <td>None</td>
+                            <td>&lt;576px</td>
+                            <td>Di động</td>
+                        </tr>
+                        <tr>
+                            <td>Small</td>
+                            <td>sm</td>
+                            <td>&ge;576px</td>
+                            <td>Di động</td>
+                        </tr>
+                        <tr>
+                            <td>Medium</td>
+                            <td>md</td>
+                            <td>&ge;768px</td>
+                            <td>Tablet</td>
+                        </tr>
+                        <tr>
+                            <td>Large</td>
+                            <td>lg</td>
+                            <td>&ge;992px</td>
+                            <td>Laptop</td>
+                        </tr>
+                        <tr>
+                            <td>Extra large</td>
+                            <td>xl</td>
+                            <td>&ge;1200px</td>
+                            <td>Desktop</td>
+                        </tr>
+                        <tr>
+                            <td>Extra extra large</td>
+                            <td>xxl</td>
+                            <td>&ge;1400px</td>
+                            <td>Tivi</td>
+                        </tr>
+                    </tbody>
+               </table>
+            </div>
+        </div>          
+        <!-- End Header -->
+        <!-- Exersise 1 -->
+        <div class="exercise-1 w-100 d-flex flex-column align-items-center gap-4">
+            <h2 class="h2">Bài Tập 1</h2>
+            <div class="sample w-75 p-3 text-center text-white bg-body-secondary">
+                <div class="row">
+                    <div class="col-12 col-md-4 bg-danger bg-opacity-50 p-4 border border-white">33% Tablet, 100% di động</div>
+                    <div class="col-12 col-md-4 bg-danger bg-opacity-50 p-4 border border-white">33% Tablet, 100% di động</div>
+                    <div class="col-12 col-md-4 bg-danger bg-opacity-50 p-4 border border-white">33% Tablet, 100% di động</div>
+                </div>
+            </div>
+            <div class="solution d-flex flex-column w-75 gap-3">
+                <div class="display bg-body-secondary p-3 text-white" id="display1">
+                    <div class="row">
+                        <div class="col-12 bg-warning border border-black p-4">33% Tablet, 100% di động</div>
+                        <div class="col-12 bg-warning border border-black p-4">33% Tablet, 100% di động</div>
+                        <div class="col-12 bg-warning border border-black p-4">33% Tablet, 100% di động</div>
+                    </div>
+                </div>
+                <div class="answer d-flex flex-column gap-3 align-items-center">
+                    <h6 class="h6 text-success mt-4 align-self-start"> Hãy chỉnh sửa mã HTML của các khối màu cam dưới đây để chúng hoạt động giống như khối màu đỏ nhạt.</h6>
+                    <textarea id="inputAnswer-1" rows="5" class="w-100 px-4 py-3 font-monospace bg-dark-subtle" placeholder="Viết mã CSS của bạn vào đây...">
+&lt;div class="row"&gt;
+  &lt;div class=""&gt;33% Tablet, 100% di động&lt;/div&gt;
+  &lt;div class=""&gt;33% Tablet, 100% di động&lt;/div&gt;
+  &lt;div class=""&gt;33% Tablet, 100% di động&lt;/div&gt;
+&lt;/div&gt;
+                    </textarea>
+                    <button id="button-1" type="button" class="btn btn-primary px-4 fw-bold border-0">Áp dụng</button>
+                </div>
+            </div>
+        </div>
+        <!-- End Exercise 1 -->
+        <!-- Exercise 2 -->
+        <div class="exercise-2 w-100 d-flex flex-column align-items-center gap-4 mt-5">
+            <h2 class="h2">Bài Tập 2</h2>
+            <div class="sample w-75 p-3 text-center text-white bg-body-secondary">
+                <div class="row">
+                    <div class="col-12 col-md-2 col-lg-5 col-xl-8 bg-info p-4 border border-white">Cột 1</div>
+                    <div class="col-12 col-md-3 col-lg-2 col-xl-2 bg-info p-4 border border-white">Cột 2</div>
+                    <div class="col-12 col-md-7 col-lg-5 col-xl-2 bg-info p-4 border border-white">Cột 3</div>
+                </div>
+            </div>
+            <div class="solution d-flex flex-column w-75 gap-3">
+                <div class="display bg-body-secondary p-3 text-white" id="display2">
+                    <div class="row">
+                        <div class="col-12 bg-success border border-white p-4">Cột 1</div>
+                        <div class="col-12 bg-success border border-white p-4">Cột 2</div>
+                        <div class="col-12 bg-success border border-white p-4">Cột 3</div>
+                    </div>
+                </div>
+                <div class="answer d-flex flex-column gap-3 align-items-center">
+                    <h6 class="h6 text-success mt-4 align-self-start"> Hãy chỉnh sửa mã HTML của các khối màu xanh lá dưới đây để chúng hoạt động giống như khối màu xanh dương.</h6>
+                    <textarea id="inputAnswer-2" rows="5" class="w-100 px-4 py-3 font-monospace bg-dark-subtle" placeholder="Viết mã CSS của bạn vào đây...">
+<div class="row">
+    <div class="">Cột 1</div>
+    <div class="">Cột 2</div>
+    <div class="">Cột 3</div>
+</div>
+                    </textarea>
+                    <button id="button-2" type="button" class="btn btn-primary px-4 fw-bold border-0">Áp dụng</button>
+                </div>
+            </div>
+        </div>
+        <!-- End Exercise 2 -->
+        <!-- Exercise 2 -->
+        <div class="exercise-3 w-100 d-flex flex-column align-items-center gap-4 mt-5">
+            <h2 class="h2">Bài Tập 3</h2>
+            <div class="sample w-75 p-3 text-center text-black bg-body-secondary">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-9 col-xl-2 bg-success-subtle p-4 border border-white">Cột 1</div>
+                    <div class="col-12 col-md-6 col-lg-3 col-xl-10 bg-success-subtle p-4 border border-white">Cột 2</div>
+                </div>
+            </div>
+            <div class="solution d-flex flex-column w-75 gap-3 ">
+                <div class="display bg-body-secondary p-3 text-black" id="display3">
+                    <div class="row">
+                        <div class="col-12 bg-warning-subtle border border-white p-4">Cột 1</div>
+                        <div class="col-12 bg-warning-subtle border border-white p-4">Cột 2</div>
+                    </div>
+                </div>
+                <div class="answer d-flex flex-column gap-3 align-items-center">
+                    <h6 class="h6 text-success mt-4 align-self-start"> Hãy chỉnh sửa mã HTML của các khối màu vàng dưới đây để chúng hoạt động giống như khối màu xanh bên trên.</h6>
+                    <textarea id="inputAnswer-3" rows="5" class="w-100 px-4 py-3 font-monospace bg-dark-subtle" placeholder="Viết mã CSS của bạn vào đây...">
+<div class="row">
+    <div class="">Cột 1</div>
+    <div class="">Cột 2</div>
+</div>
+                    </textarea>
+                    <button id="button-3" type="button" class="btn btn-primary px-4 fw-bold border-0">Áp dụng</button>
+                </div>
+            </div>
+        </div>
+        <!-- End Exercise 2 -->
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Link Javascript -->
+     <script src="main.js"></script>
+  </body>
+</html>
